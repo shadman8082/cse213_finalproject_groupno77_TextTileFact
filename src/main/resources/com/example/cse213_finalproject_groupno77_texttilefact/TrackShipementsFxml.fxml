@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="491.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cse213_finalproject_groupno77_texttilefactory.TrackShipementsFxmlController">
+   <children>
+      <Text fill="#f40505" layoutX="237.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Track Shipements" />
+      <TextField fx:id="searchField" layoutX="23.0" layoutY="60.0" prefWidth="200" promptText="Search shipments..." />
+      <Button fx:id="SearchButtonOnActionButton" layoutX="242.0" layoutY="60.0" text="Search" />
+      <Button fx:id="AddNewShipementsOnAction" layoutX="321.0" layoutY="60.0" style="-fx-background-color: #27ae60; -fx-text-fill: white;" text="Add New" />
+      <Separator layoutX="10.0" layoutY="10.0" />
+      <HBox layoutX="10.0" layoutY="10.0" spacing="10" />
+      <HBox layoutX="10.0" layoutY="10.0" spacing="10" />
+      <TableView fx:id="shipmentsTable" layoutX="29.0" layoutY="138.0" prefHeight="300">
+         <columns>
+            <TableColumn fx:id="IdShipementsTableViewColBox" prefWidth="80" text="ID" />
+            <TableColumn fx:id="ClientShipementsTableViewColBox" prefWidth="120" text="Client" />
+            <TableColumn fx:id="StatusShipementsTableViewColBox" prefWidth="100" text="Status" />
+            <TableColumn fx:id="DueDateShipementsTableViewColBox" prefWidth="100" text="Due Date" />
+            <TableColumn fx:id="ActionsShipementsTableViewColBox" prefWidth="120" text="Actions" />
+         </columns>
+      </TableView>
+      <Button layoutX="207.0" layoutY="453.0" onAction="#UpdateStatusOnActionButton" text="Update Status" />
+      <Button fx:id="ViewDetailOnActionButton" layoutX="38.0" layoutY="453.0" text="View Details" />
+      <Button layoutX="142.0" layoutY="453.0" onAction="#ExportButtonOnActionButton" text="Export" />
+   </children>
+</AnchorPane>

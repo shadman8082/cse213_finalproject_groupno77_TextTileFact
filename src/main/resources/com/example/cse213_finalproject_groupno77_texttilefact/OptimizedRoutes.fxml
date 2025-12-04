@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.cse213_finalproject_groupno77_texttilefactory.OptimizeRoutesController">
+
+    <Label text="Optimize Routes" style="-fx-font-size: 18;" />
+    <Separator />
+
+    <HBox spacing="20">
+        <VBox spacing="10" prefWidth="300">
+            <Label text="Enter Addresses" />
+            <TextArea fx:id="txtAddresses" promptText="Enter one address per line" prefRowCount="6" />
+            <Button fx:id="btnFindRoute" text="Find Best Route" onAction="#handleFindRoute"
+                    style="-fx-background-color: #27ae60; -fx-text-fill: white;" />
+            <Label fx:id="lblRouteStatus" text="" />
+        </VBox>
+
+        <VBox spacing="10">
+            <Label text="Optimized Route" />
+            <TextArea fx:id="txtRouteResult" prefHeight="200" prefWidth="300" editable="false" />
+            <Label fx:id="lblDistance" text="Distance: " />
+            <Label fx:id="lblTime" text="Estimated Time: " />
+            <Button fx:id="btnSaveRoute" text="Save Route" onAction="#handleSaveRoute" />
+        </VBox>
+    </HBox>
+
+</VBox>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cse213_finalproject_groupno77_texttilefactory.VehicleRecordsFxmlController">
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" prefHeight="870.0" prefWidth="611.0" spacing="15">
+         <children>
+            <Label style="-fx-font-size: 18;" text="Vehicle Records" />
+            <Separator />
+            <HBox spacing="10">
+               <children>
+                  <Button fx:id="btnAddVehicle" onAction="#handleAddVehicle" text="Add Vehicle" />
+                  <TextField fx:id="txtSearch" prefWidth="200" promptText="Search vehicles..." />
+                  <Button fx:id="btnSearch" onAction="#handleSearch" text="Search" />
+               </children>
+            </HBox>
+            <TableView fx:id="vehicleTable" prefHeight="300">
+               <columns>
+                  <TableColumn fx:id="colLicense" prefWidth="100" text="License" />
+                  <TableColumn fx:id="colType" prefWidth="80" text="Type" />
+                  <TableColumn fx:id="colStatus" prefWidth="80" text="Status" />
+                  <TableColumn fx:id="colService" prefWidth="100" text="Last Service" />
+               </columns>
+            </TableView>
+            <Label fx:id="lblCount" text="Found: 0 vehicles" />
+            <Separator />
+            <Label text="Selected Vehicle Details" />
+            <GridPane hgap="10" vgap="10">
+               <children>
+                  <Label text="License:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                  <Label fx:id="lblLicense" text="-" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                  <Label text="Status:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                  <ComboBox fx:id="comboStatus" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label text="Service Date:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                  <DatePicker fx:id="dateServiceDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label text="Needs Service:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                  <CheckBox fx:id="CheckBoxNeedsService" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+               </rowConstraints>
+            </GridPane>
+            <HBox spacing="10">
+               <children>
+                  <Button fx:id="btnUpdate" onAction="#handleUpdate" text="Update Vehicle" />
+               </children>
+            </HBox>
+            <Button fx:id="btnDelete" onAction="#handleDelete" text="Delete Vehicle" />
+            <Separator />
+            <Label text="Schedule Maintenance" />
+            <HBox spacing="10">
+               <children>
+                  <DatePicker fx:id="datePickerMaintenance" promptText="Select Date" />
+                  <TextField fx:id="txtServiceType" promptText="Service Type" />
+                  <Button fx:id="btnSchedule" onAction="#handleSchedule" text="Schedule" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

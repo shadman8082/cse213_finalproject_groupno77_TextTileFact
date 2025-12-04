@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="452.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cse213_finalproject_groupno77_texttilefact.LogisticManagerDashBoardController">
+   <children>
+      <TextField layoutX="191.0" layoutY="28.0" prefHeight="30.0" prefWidth="192.0" text="Logistic Manager DashBoard" />
+      <Button layoutX="45.0" layoutY="92.0" mnemonicParsing="false" onAction="#TrackShipementsOnActionButton" text="1. Track Shipements" />
+      <Button layoutX="45.0" layoutY="344.0" mnemonicParsing="false" onAction="#OptimizeroutesOnActionButton" text="7. Optimize Routes" />
+      <Button layoutX="45.0" layoutY="300.0" mnemonicParsing="false" onAction="#GenarateReportsOnActionButton" text="6. Generate Reports" />
+      <Button layoutX="45.0" layoutY="256.0" mnemonicParsing="false" onAction="#CommuniacationOnActionButton" text="5. Communication" />
+      <Button layoutX="45.0" layoutY="214.0" mnemonicParsing="false" onAction="#InventoryTransferOnActionButton" text="4. Inventory Transfers" />
+      <Button layoutX="45.0" layoutY="170.0" mnemonicParsing="false" onAction="#VehicleRecordsOnActionButton" text="3. Vehicle Records" />
+      <Button layoutX="45.0" layoutY="132.0" mnemonicParsing="false" onAction="#ManageSchedulesOnActionButton" text="2. Manage Schedules" />
+      <Button layoutX="45.0" layoutY="395.0" mnemonicParsing="false" onAction="#StuffPerformanceOnActionButton" text="8. Staff Performance" />
+      <Button layoutX="390.0" layoutY="386.0" mnemonicParsing="false" onAction="#LogOutOnActionButton" text="Logout" />
+   </children>
+</AnchorPane>

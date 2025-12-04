@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cse213_finalproject_groupno77_texttilefactory.ManageSchedulesFxmlController">
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" spacing="15">
+         <children>
+            <Label style="-fx-font-size: 18;" text="Manage Schedules" />
+            <Separator />
+            <HBox spacing="20">
+               <children>
+                  <VBox prefWidth="300" spacing="10">
+                     <children>
+                        <Label text="New Schedule" />
+                        <TextField fx:id="ClientNameTextField" promptText="Client Name" />
+                        <DatePicker fx:id="DeliveryDateDatePicker" promptText="Delivery Date" />
+                        <TextField fx:id="DestinationTextFiled" promptText="Destination" />
+                        <ComboBox fx:id="SelectDriverComboBox" promptText="Select Driver" />
+                        <Button onAction="#CreateScheduleonActionButton" style="-fx-background-color: #27ae60; -fx-text-fill: white;" text="Create Schedule" />
+                     </children>
+                  </VBox>
+                  <VBox spacing="10">
+                     <children>
+                        <Label text="Upcoming Schedules" />
+                        <TableView fx:id="UpcomingSchedulesTableView" prefHeight="250">
+                           <columns>
+                              <TableColumn fx:id="ClientTableViewUpcomingColBox" prefWidth="120" text="Client" />
+                              <TableColumn fx:id="DateTableViewUpcomingColBox" prefWidth="100" text="Date" />
+                              <TableColumn fx:id="DriverTableViewUpcomingColBox" prefWidth="100" text="Driver" />
+                              <TableColumn fx:id="StatusTableViewUpcomingColBox" prefWidth="100" text="Status" />
+                           </columns>
+                        </TableView>
+                        <HBox spacing="10">
+                           <children>
+                              <Button onAction="#EditOnActionButton" text="Edit" />
+                              <Button onAction="#CancelOnActionButton" style="-fx-background-color: #e74c3c; -fx-text-fill: white;" text="Cancel" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
