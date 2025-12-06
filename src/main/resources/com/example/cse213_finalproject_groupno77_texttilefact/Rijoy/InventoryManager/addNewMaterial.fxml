@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cse213_finalproject_groupno77_texttilefactory.InventoryManager.AddNewMaterialController">
+
+    <children>
+        <VBox alignment="CENTER" layoutX="150" layoutY="40" spacing="15">
+
+            <Label style="-fx-font-size: 22px; -fx-font-weight: bold;" text="Add New Material" />
+
+            <HBox spacing="10">
+                <Label style="-fx-font-size: 14px;" text="Material Name:" />
+                <TextField fx:id="materialNameField" prefWidth="200" promptText="Enter name" />
+            </HBox>
+
+            <HBox spacing="23">
+                <Label style="-fx-font-size: 14px;" text="Quantity:" />
+                <TextField fx:id="quantityField" prefWidth="200" promptText="Enter quantity" />
+            </HBox>
+
+            <HBox spacing="43">
+                <Label style="-fx-font-size: 14px;" text="Price:" />
+                <TextField fx:id="priceField" prefWidth="200" promptText="Enter price" />
+            </HBox>
+
+            <Button onAction="#handleAddMaterial" prefWidth="180" style="-fx-font-size: 15px; -fx-background-color: #2196F3; -fx-text-fill: white;" text="Add Material" />
+
+            <Label fx:id="statusLabel" style="-fx-text-fill: green; -fx-font-size: 14px;" text="" />
+
+        </VBox>
+      <Button layoutX="499.0" layoutY="337.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="26.0" prefWidth="80.0" text="Back" />
+    </children>
+
+</AnchorPane>

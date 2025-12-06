@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.cse213_finalproject_groupno77_texttilefactory.InventoryManager.GenerateMaterialReportController">
+
+    <!-- TOP TITLE -->
+    <top>
+        <Label text="Generate Material Report"
+               style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-padding: 15;" />
+    </top>
+
+    <!-- CENTER: TABLE + GENERATED REPORT -->
+    <center>
+        <VBox spacing="15" padding="20">
+
+            <!-- MATERIAL TABLE -->
+            <TableView fx:id="materialTable" prefHeight="250">
+
+                <columns>
+                    <TableColumn fx:id="nameColumn" text="Material Name" prefWidth="200"/>
+                    <TableColumn fx:id="quantityColumn" text="Quantity" prefWidth="150"/>
+                    <TableColumn fx:id="priceColumn" text="Price" prefWidth="150"/>
+                </columns>
+
+            </TableView>
+
+            <!-- GENERATED REPORT AREA -->
+            <TextArea fx:id="reportArea"
+                      promptText="Generated material report will appear here..."
+                      prefHeight="180"
+                      wrapText="true"
+                      style="-fx-font-size: 14;" />
+
+        </VBox>
+    </center>
+
+    <!-- BOTTOM BUTTONS -->
+    <bottom>
+        <HBox spacing="20" padding="20" alignment="center">
+            <Button fx:id="generateButton" text="Generate Report" prefWidth="150" />
+            <Button fx:id="exportButton" text="Export as Text File" prefWidth="150" />
+            <Button fx:id="backButton" text="Back to Dashboard" prefWidth="150" />
+        </HBox>
+    </bottom>
+
+</BorderPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.cse213_finalproject_groupno77_texttilefactory.InventoryManager.materialDashboardController"
+            prefHeight="500" prefWidth="600">
+
+    <children>
+        <VBox spacing="18" layoutX="170" layoutY="30" alignment="CENTER">
+
+            <Label text="Material Manager Dashboard"
+                   style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+
+            <Button text="Add New Material" prefWidth="260"
+                    onAction="#gotoAddNewMaterial"/>
+
+            <Button text="View All Materials" prefWidth="260"
+                    onAction="#gotoViewAllMaterials"/>
+
+            <Button text="Search Material by Name" prefWidth="260"
+                    onAction="#gotoSearchMaterialByName"/>
+
+            <Button text="Update Material Quantity" prefWidth="260"
+                    onAction="#gotoUpdateMaterialQuantity"/>
+
+            <Button text="Delete Material" prefWidth="260"
+                    onAction="#gotoDeleteMaterial"/>
+
+            <Button text="Show Low Stock Items" prefWidth="260"
+                    onAction="#gotoShowLowStock"/>
+
+            <Button text="Calculate Total Stock Quantity" prefWidth="260"
+                    onAction="#gotoCalculateTotalStock"/>
+
+            <Button text="Generate Material Report" prefWidth="260"
+                    onAction="#gotoGenerateMaterialReport"/>
+
+            <Button text="Back to Main Menu" prefWidth="260"
+                    onAction="#gotoMainMenu"/>
+        </VBox>
+    </children>
+
+</AnchorPane>

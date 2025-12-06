@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.cse213_finalproject_groupno77_texttilefactory.EmployeeManager.generateEmployeeReportController">
+
+    <children>
+
+        <Label text="Generate Employee Report" layoutX="200" layoutY="20"/>
+
+        <Label text="Criteria:" layoutX="50" layoutY="70"/>
+        <ComboBox fx:id="criteriaCombo" layoutX="120" layoutY="65" prefWidth="200"/>
+
+        <Button fx:id="btnGenerate" text="Generate" layoutX="340" layoutY="65" onAction="#btnGenerateOnAction"/>
+        <Button fx:id="btnDownload" text="Download" layoutX="420" layoutY="65" onAction="#btnDownloadOnAction"/>
+
+        <TableView fx:id="reportTable" layoutX="50" layoutY="120" prefWidth="500" prefHeight="200">
+            <columns>
+                <TableColumn fx:id="colID" text="Employee ID" prefWidth="150"/>
+                <TableColumn fx:id="colName" text="Name" prefWidth="200"/>
+                <TableColumn fx:id="colRole" text="Role" prefWidth="150"/>
+            </columns>
+        </TableView>
+
+        <Button text="Back" layoutX="500" layoutY="340" onAction="#backButtonOnAction"/>
+
+    </children>
+
+</AnchorPane>
