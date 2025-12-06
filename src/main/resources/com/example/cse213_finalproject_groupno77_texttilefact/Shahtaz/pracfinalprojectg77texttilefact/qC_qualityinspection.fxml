@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="419.0" prefWidth="703.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pracfinalprojectg77texttilefact.qualityinspectionController">
+   <children>
+      <Label fx:id="qualityINSheadingLabel" layoutX="235.0" layoutY="25.0" prefHeight="44.0" prefWidth="162.0" text="Quality Inspection">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="selectOneCombobox" layoutX="59.0" layoutY="91.0" prefWidth="150.0" promptText="select one" />
+      <TableView fx:id="qualityInspecTableView" layoutX="11.0" layoutY="163.0" prefHeight="206.0" prefWidth="464.0">
+        <columns>
+          <TableColumn fx:id="fabricsTablecolumn" prefWidth="83.99996662139893" text="fabrics" />
+          <TableColumn fx:id="coloursTablecolumn" prefWidth="61.5999755859375" text="colours" />
+            <TableColumn fx:id="machineLinetablecolumn" prefWidth="98.39996337890625" text="machine line" />
+            <TableColumn fx:id="Tablecoulumn" prefWidth="75.0" text="stitching" />
+            <TableColumn fx:id="finishTableColumn" prefWidth="75.0" text="finish" />
+            <TableColumn fx:id="serialTablecoulumn" prefWidth="75.0" text="serial" />
+        </columns>
+      </TableView>
+      <Label fx:id="insREsultLabel" layoutX="487.0" layoutY="173.0" prefHeight="26.0" prefWidth="92.0" text=" Inspection Result" />
+      <Button layoutX="515.0" layoutY="350.0" mnemonicParsing="false" onAction="#saveButtonONaction" prefHeight="26.0" prefWidth="63.0" text="save" />
+      <ComboBox fx:id="chooseCombobox" layoutX="487.0" layoutY="200.0" prefHeight="16.0" prefWidth="108.0" promptText="choose" />
+   </children>
+</AnchorPane>

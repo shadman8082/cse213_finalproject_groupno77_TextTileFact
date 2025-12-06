@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pracfinalprojectg77texttilefact.sM_chatsController">
+   <children>
+      <Label fx:id="chatsLabel" layoutX="226.0" layoutY="7.0" prefHeight="31.0" prefWidth="112.0" text="chats" />
+      <ComboBox fx:id="choosereciepCombobox" layoutX="114.0" layoutY="131.0" prefWidth="150.0" promptText="choose receipent" />
+      <Button layoutX="256.0" layoutY="338.0" mnemonicParsing="false" onAction="#sndButtonOnaction" text="send" />
+      <TextArea fx:id="typetextarea" layoutX="316.0" layoutY="144.0" prefHeight="66.0" prefWidth="200.0" text="     type.....&#10;" />
+      <Button layoutX="416.0" layoutY="272.0" mnemonicParsing="false" onAction="#okButtonOnaction" text="ok" />
+      <Label fx:id="attachedPhotoLabel" layoutX="388.0" layoutY="210.0" prefHeight="40.0" prefWidth="127.0" text="    attached photo" />
+   </children>
+</AnchorPane>

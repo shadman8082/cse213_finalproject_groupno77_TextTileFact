@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pracfinalprojectg77texttilefact.qC_reportsController">
+   <children>
+      <Label fx:id="reportLabel" layoutX="204.0" layoutY="14.0" prefHeight="32.0" prefWidth="156.0" text="   reports" />
+      <DatePicker fx:id="reportsDatepickr" layoutX="332.0" layoutY="99.0" />
+      <TableView layoutX="104.0" layoutY="173.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="dateTableColumn" prefWidth="50.4000244140625" text="date" />
+          <TableColumn fx:id="productionTablecolumn" prefWidth="69.5999755859375" text="production" />
+            <TableColumn fx:id="inspectorTableColumn" prefWidth="75.0" text="inspector" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="selectCombobox" layoutX="357.0" layoutY="187.0" prefWidth="150.0" promptText="select" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="475.0" prefWidth="589.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pracfinalprojectg77texttilefact.qC_checkListController">
+   <children>
+      <TableView layoutX="32.0" layoutY="139.0" prefHeight="242.0" prefWidth="277.0">
+        <columns>
+          <TableColumn fx:id="dateTablecolumn" prefWidth="60.800048828125" text="date" />
+          <TableColumn fx:id="sltableColumn" prefWidth="75.199951171875" text="sl" />
+            <TableColumn fx:id="existingCheckListTablecolumn" prefWidth="137.60003662109375" text="existing check list" />
+        </columns>
+      </TableView>
+      <Button layoutX="470.0" layoutY="235.0" mnemonicParsing="false" onAction="#createButtonOnaction" text="create new" />
+      <Button layoutX="325.0" layoutY="375.0" mnemonicParsing="false" onAction="#editButtonOnaction" text="edit" />
+      <Button layoutX="321.0" layoutY="412.0" mnemonicParsing="false" onAction="#applyButtonOnaction" text="apply" />
+      <Label fx:id="colourLabel" layoutX="55.0" layoutY="67.0" prefHeight="18.0" prefWidth="46.0" text="colour" />
+      <TextField fx:id="coloTextField" layoutX="97.0" layoutY="63.0" prefHeight="26.0" prefWidth="81.0" />
+      <TextField fx:id="sizeTextfield" layoutX="463.0" layoutY="147.0" prefHeight="26.0" prefWidth="122.0" />
+      <Label fx:id="sizeLabe" layoutX="416.0" layoutY="151.0" prefHeight="18.0" prefWidth="46.0" text="size" />
+      <Label fx:id="stitchingLabel" layoutX="388.0" layoutY="104.0" prefHeight="18.0" prefWidth="74.0" text="stitching" />
+      <TextField fx:id="stitchingTextfield" layoutX="463.0" layoutY="100.0" prefHeight="26.0" prefWidth="122.0" />
+      <Label fx:id="checkListLabel" layoutX="267.0" layoutY="6.0" prefHeight="26.0" prefWidth="105.0" text="checkLists" />
+   </children>
+</AnchorPane>

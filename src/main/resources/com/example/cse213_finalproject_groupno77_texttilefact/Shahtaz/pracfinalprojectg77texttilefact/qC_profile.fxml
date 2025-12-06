@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pracfinalprojectg77texttilefact.qC_profileController">
+   <children>
+      <TextField fx:id="nameTextField" layoutX="136.0" layoutY="83.0" />
+      <Label fx:id="naeLabel" layoutX="78.0" layoutY="86.0" prefHeight="18.0" prefWidth="62.0" text="name" />
+      <TextField fx:id="IdTextField" layoutX="123.0" layoutY="122.0" />
+      <Label fx:id="idLabel" layoutX="61.0" layoutY="126.0" prefHeight="18.0" prefWidth="62.0" text="Id" />
+      <Label fx:id="passLabel" layoutX="61.0" layoutY="162.0" prefHeight="18.0" prefWidth="50.0" text="pass" />
+      <TextField fx:id="passTextfield" layoutX="111.0" layoutY="158.0" />
+      <Button layoutX="198.0" layoutY="281.0" mnemonicParsing="false" onAction="#editButtonOnaction" text="edit" />
+      <Button layoutX="300.0" layoutY="294.0" mnemonicParsing="false" onAction="#okButtonOnactionn" text="ok" />
+      <Label fx:id="profileLabel" layoutX="286.0" layoutY="6.0" prefHeight="26.0" prefWidth="102.0" text="profile" />
+   </children>
+</AnchorPane>

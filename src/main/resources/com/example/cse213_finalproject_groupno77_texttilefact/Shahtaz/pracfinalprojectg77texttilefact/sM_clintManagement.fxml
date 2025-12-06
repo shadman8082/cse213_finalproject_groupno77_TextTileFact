@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pracfinalprojectg77texttilefact.sM_clintManagementController">
+   <children>
+      <ComboBox fx:id="selectClientComboBox" layoutX="40.0" layoutY="59.0" prefWidth="150.0" promptText="select  client type" />
+      <TextField fx:id="nameTextfeld" layoutX="88.0" layoutY="146.0" />
+      <Label fx:id="nameLabel" layoutX="22.0" layoutY="139.0" prefHeight="40.0" prefWidth="66.0" text="name" />
+      <TextField fx:id="addressTExtfield" layoutX="88.0" layoutY="187.0" />
+      <TextField fx:id="contTextfield" layoutX="88.0" layoutY="233.0" />
+      <Label fx:id="addresLabel" layoutX="22.0" layoutY="180.0" prefHeight="40.0" prefWidth="66.0" text="address" />
+      <Label fx:id="contactLabel" layoutX="22.0" layoutY="220.0" prefHeight="40.0" prefWidth="66.0" text=" contact" />
+      <RadioButton layoutX="41.0" layoutY="99.0" mnemonicParsing="false" onAction="#existingClientRadioButtonOnaction" text="existing client" />
+      <RadioButton layoutX="181.0" layoutY="99.0" mnemonicParsing="false" onAction="#newClientButtonOnaction" text="new client" />
+      <Button layoutX="204.0" layoutY="306.0" mnemonicParsing="false" onAction="#saveButtonOnAction" text="save" />
+      <Label fx:id="clientINfolabel" layoutX="289.0" layoutY="14.0" prefHeight="40.0" prefWidth="66.0" text="client info" />
+   </children>
+</AnchorPane>

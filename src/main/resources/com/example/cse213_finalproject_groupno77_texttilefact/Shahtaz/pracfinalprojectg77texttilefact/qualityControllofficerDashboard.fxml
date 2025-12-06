@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pracfinalprojectg77texttilefact.qualityControllofficerDashboardController">
+   <children>
+      <VBox fx:id="qualityControllOfficerdashboardVbox" layoutX="1.0" prefHeight="394.0" prefWidth="134.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#qualityInspectionbuttonONaction" prefHeight="42.0" prefWidth="142.0" text="quality inspectation" />
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#newInspectionrecordButtonOnaction" prefHeight="42.0" prefWidth="142.0" text="new inspectin record" />
+            <Button layoutX="10.0" layoutY="52.0" mnemonicParsing="false" onAction="#addphotobuttonONaction" prefHeight="42.0" prefWidth="142.0" text="addphoto" />
+            <Button layoutX="10.0" layoutY="95.0" mnemonicParsing="false" onAction="#batchApprovalbuttonOnaction" prefHeight="42.0" prefWidth="142.0" text="batch approval" />
+            <Button layoutX="10.0" layoutY="137.0" mnemonicParsing="false" onAction="#reportsbuttonONaction" prefHeight="42.0" prefWidth="142.0" text="reprts" />
+            <Button layoutX="10.0" layoutY="180.0" mnemonicParsing="false" onAction="#allertsbuttonONaction" prefHeight="42.0" prefWidth="142.0" text="allerts" />
+            <Button layoutX="10.0" layoutY="222.0" mnemonicParsing="false" onAction="#checklistbuttonONaction" prefHeight="42.0" prefWidth="142.0" text="checklist" />
+            <Button layoutX="10.0" layoutY="264.0" mnemonicParsing="false" onAction="#messagesbuttonONaction" prefHeight="42.0" prefWidth="142.0" text="messages" />
+            <Button layoutX="10.0" layoutY="307.0" mnemonicParsing="false" onAction="#profilebuttonONaction" prefHeight="42.0" prefWidth="142.0" text="profile" />
+         </children>
+      </VBox>
+      <Label fx:id="dashBoardlebel" layoutX="252.0" layoutY="6.0" prefHeight="62.0" prefWidth="202.0" text="DASH BOARD">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

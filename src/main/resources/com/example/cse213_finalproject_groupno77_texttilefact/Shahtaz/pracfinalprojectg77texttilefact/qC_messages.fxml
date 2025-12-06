@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pracfinalprojectg77texttilefact.qC_massagesController">
+   <children>
+      <ComboBox fx:id="seletReciepentComoBox" layoutX="63.0" layoutY="125.0" prefWidth="150.0" promptText="select recipeint" />
+      <TextArea fx:id="typehereTextArea" layoutX="63.0" layoutY="174.0" prefHeight="111.0" prefWidth="200.0" text="   type here&#10;" />
+      <Button layoutX="322.0" layoutY="174.0" mnemonicParsing="false" onAction="#attachedButtonOnaction" prefHeight="87.0" prefWidth="174.0" text="atached" />
+      <Button layoutX="288.0" layoutY="312.0" mnemonicParsing="false" onAction="#sendButtonOnaction" text="send" />
+      <Label fx:id="messagesLabel" layoutX="213.0" prefHeight="42.0" prefWidth="138.0" text="   messages" />
+      <Label fx:id="filePictureLabel" layoutX="322.0" layoutY="172.0" prefHeight="55.0" prefWidth="174.0" text="file/picture" />
+   </children>
+</AnchorPane>
