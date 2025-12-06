@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="500" prefWidth="400" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cse213_finalproject_groupno77_texttilefact.Shadman.SupplierUpdateProfileController">
+
+    <Label layoutX="120" layoutY="20" style="-fx-font-size: 18px;" text="Update Profile" />
+
+    <VBox layoutX="50" layoutY="60" spacing="15" prefWidth="300">
+        <Label text="Supplier ID:" />
+        <TextField fx:id="supplierIdField" editable="false" />
+
+        <Label text="Company Name:" />
+        <TextField fx:id="companyField" promptText="Company name" />
+
+        <Label text="Contact Person:" />
+        <TextField fx:id="contactField" promptText="Contact person" />
+
+        <Label text="Phone:" />
+        <TextField fx:id="phoneField" promptText="Phone number" />
+
+        <Label text="Email:" />
+        <TextField fx:id="emailField" promptText="Email address" />
+
+        <Label text="Address:" />
+        <TextField fx:id="addressField" promptText="Address" />
+
+        <Label text="Password:" />
+        <PasswordField fx:id="passwordField" promptText="New password" />
+
+        <Button fx:id="updateButton" onAction="#handleUpdate" text="Update Profile" />
+        <Button fx:id="backButton" onAction="#handleBack" text="Back" />
+    </VBox>
+
+    <Label fx:id="statusLabel" layoutX="50" layoutY="450" prefWidth="300" />
+
+</AnchorPane>

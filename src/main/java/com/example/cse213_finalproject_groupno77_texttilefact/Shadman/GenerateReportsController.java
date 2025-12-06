@@ -6,42 +6,37 @@ import java.awt.event.ActionEvent;
 
 public class GenerateReportsController
 {
+
     @javafx.fxml.FXML
-    private Button btnExportPDF;
+    private TextField userIdTextField;
     @javafx.fxml.FXML
-    private Button btnSave;
-    @javafx.fxml.FXML
-    private ComboBox comboReportType;
-    @javafx.fxml.FXML
-    private Label lblGenerateStatus;
-    @javafx.fxml.FXML
-    private Button btnPrint;
-    @javafx.fxml.FXML
-    private DatePicker dateTo;
-    @javafx.fxml.FXML
-    private DatePicker dateFrom;
-    @javafx.fxml.FXML
-    private Button btnGenerate;
-    @javafx.fxml.FXML
-    private TextArea txtReportPreview;
+    private PasswordField passwordPasswordField;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void handleSave(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void handleExportPDF(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void handlePrint(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void handleGenerate(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void logInOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void createAccountOnAction(ActionEvent actionEvent) {
     }
 }

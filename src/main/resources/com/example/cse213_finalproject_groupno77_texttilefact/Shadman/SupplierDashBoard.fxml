@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cse213_finalproject_groupno77_texttilefact.Shadman.SupplierDashboardController">
+    <children>
+        <Label layoutX="180.0" layoutY="30.0" text="Supplier Dashboard" style="-fx-font-size: 24px; -fx-font-weight: bold;">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+
+        <VBox layoutX="50.0" layoutY="100.0" spacing="15" prefWidth="250">
+            <children>
+                <Button fx:id="btnViewOrders" onAction="#handleViewOrders" prefHeight="40" prefWidth="250" text="1. View Purchase Orders" />
+                <Button fx:id="btnConfirmOrders" onAction="#handleConfirmOrders" prefHeight="40" prefWidth="250" text="2. Confirm Orders" />
+                <Button fx:id="btnDispatchMaterials" onAction="#handleDispatchMaterials" prefHeight="40" prefWidth="250" text="3. Dispatch Materials" />
+                <Button fx:id="btnMarkDelivery" onAction="#handleMarkDelivery" prefHeight="40" prefWidth="250" text="4. Mark Delivery Complete" />
+            </children>
+        </VBox>
+
+        <VBox layoutX="350.0" layoutY="100.0" spacing="15" prefWidth="250">
+            <children>
+                <Button fx:id="btnUploadInvoice" onAction="#handleUploadInvoice" prefHeight="40" prefWidth="250" text="5. Upload Invoice/Bill" />
+                <Button fx:id="btnCheckPayment" onAction="#handleCheckPayment" prefHeight="40" prefWidth="250" text="6. Check Payment Status" />
+                <Button fx:id="btnViewHistory" onAction="#handleViewHistory" prefHeight="40" prefWidth="250" text="7. View Order History" />
+                <Button fx:id="btnUpdateProfile" onAction="#handleUpdateProfile" prefHeight="40" prefWidth="250" text="8. Update Profile" />
+            </children>
+        </VBox>
+
+        <Button fx:id="btnLogout" layoutX="500.0" layoutY="450.0" onAction="#handleLogout" text="Logout" prefWidth="100" />
+
+        <Label fx:id="lblWelcome" layoutX="50.0" layoutY="450.0" prefWidth="400" />
+    </children>
+</AnchorPane>

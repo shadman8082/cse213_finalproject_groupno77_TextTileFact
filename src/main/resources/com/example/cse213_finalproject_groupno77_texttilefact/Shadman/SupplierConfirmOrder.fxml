@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400" prefWidth="500" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cse213_finalproject_groupno77_texttilefact.Shadman.SupplierConfirmOrderController">
+
+    <Label layoutX="150" layoutY="20" style="-fx-font-size: 18px;" text="Confirm Order" />
+
+    <VBox layoutX="50" layoutY="60" spacing="15" prefWidth="400">
+        <Label text="Order ID:" />
+        <TextField fx:id="orderIdField" promptText="Enter Order ID" />
+
+        <Label text="Material Name:" />
+        <TextField fx:id="materialField" promptText="Material name" />
+
+        <Label text="Quantity:" />
+        <TextField fx:id="quantityField" promptText="Quantity" />
+
+        <Label text="Delivery Date:" />
+        <TextField fx:id="dateField" promptText="YYYY-MM-DD" />
+
+        <Button fx:id="confirmButton" onAction="#handleConfirm" text="Confirm Order" />
+        <Button fx:id="backButton" onAction="#handleBack" text="Back" />
+    </VBox>
+
+    <Label fx:id="statusLabel" layoutX="50" layoutY="350" prefWidth="400" />
+
+</AnchorPane>
