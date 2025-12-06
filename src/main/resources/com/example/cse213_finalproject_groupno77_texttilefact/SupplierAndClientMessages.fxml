@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cse213_finalproject_groupno77_texttilefactory.SupplierAndClientMessages">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cse213_finalproject_groupno77_texttilefact.Shadman.SupplierAndClientMessages">
    <children>
       <Label layoutX="40.0" layoutY="30.0" text="Messages" />
       <TableView fx:id="tableMessages" layoutX="40.0" layoutY="70.0" prefHeight="250" prefWidth="400">

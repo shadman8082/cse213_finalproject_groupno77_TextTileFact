@@ -3,7 +3,7 @@
 <?import javafx.scene.layout.*?>
 
 <VBox spacing="15" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="com.example.cse213_finalproject_groupno77_texttilefact.OptimizeRoutesController">
+      fx:controller="com.example.cse213_finalproject_groupno77_texttilefact.Shadman.OptimizeRoutesController">
 
     <Label text="Optimize Routes" style="-fx-font-size: 18;" />
     <Separator />

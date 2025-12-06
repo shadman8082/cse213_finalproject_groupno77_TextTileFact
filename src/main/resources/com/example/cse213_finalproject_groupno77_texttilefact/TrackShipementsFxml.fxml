@@ -9,13 +9,12 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="491.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cse213_finalproject_groupno77_texttilefactory.TrackShipementsFxmlController">
+<AnchorPane prefHeight="491.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cse213_finalproject_groupno77_texttilefact.Shadman.TrackShipementsFxmlController">
    <children>
       <Text fill="#f40505" layoutX="237.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Track Shipements" />
       <TextField fx:id="searchField" layoutX="23.0" layoutY="60.0" prefWidth="200" promptText="Search shipments..." />
-      <Button fx:id="SearchButtonOnActionButton" layoutX="242.0" layoutY="60.0" text="Search" />
-      <Button fx:id="AddNewShipementsOnAction" layoutX="321.0" layoutY="60.0" style="-fx-background-color: #27ae60; -fx-text-fill: white;" text="Add New" />
+      <Button fx:id="SearchButtonOnActionButton" layoutX="242.0" layoutY="60.0" onAction="#SearchButtonOnActionButton" text="Search" />
+      <Button fx:id="AddNewShipementsOnAction" layoutX="321.0" layoutY="60.0" onAction="#AddNewShipementsOnAction" style="-fx-background-color: #27ae60; -fx-text-fill: white;" text="Add New" />
       <Separator layoutX="10.0" layoutY="10.0" />
       <HBox layoutX="10.0" layoutY="10.0" spacing="10" />
       <HBox layoutX="10.0" layoutY="10.0" spacing="10" />
@@ -29,7 +28,8 @@
          </columns>
       </TableView>
       <Button layoutX="207.0" layoutY="453.0" onAction="#UpdateStatusOnActionButton" text="Update Status" />
-      <Button fx:id="ViewDetailOnActionButton" layoutX="38.0" layoutY="453.0" text="View Details" />
+      <Button fx:id="ViewDetailOnActionButton" layoutX="38.0" layoutY="453.0" onAction="#ViewDetailOnActionButton" text="View Details" />
       <Button layoutX="142.0" layoutY="453.0" onAction="#ExportButtonOnActionButton" text="Export" />
+      <Button fx:id="SearchButtonOnActionButton1" layoutX="23.0" layoutY="18.0" onAction="#BackButtonOnActionButton" text="Back" />
    </children>
 </AnchorPane>
